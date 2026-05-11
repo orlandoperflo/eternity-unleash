@@ -53,12 +53,12 @@ function UploadCard() {
           <div className="rounded-full border border-emerald-300/20 bg-emerald-300/10 px-3 py-1 text-xs font-medium text-emerald-100">Encrypted</div>
         </div>
 
-        <div className="mt-6 rounded-[1.3rem] border border-dashed border-white/15 bg-white/[0.035] p-5 text-center transition hover:border-signal/40 hover:bg-signal/[0.045]">
-          <div className="mx-auto flex size-12 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.06] text-xl text-ember">⌁</div>
-          <p className="mt-4 text-sm font-semibold text-bone">Transcripts · SOPs · PDFs · Recordings · CRM exports</p>
-          <p className="mt-2 text-xs leading-5 text-fog">One calm intake layer for every operational artifact.</p>
+        <label className="mt-6 block cursor-pointer rounded-[1.3rem] border border-dashed border-white/15 bg-white/[0.035] p-5 text-center transition hover:border-signal/40 hover:bg-signal/[0.045]">
+          <span className="mx-auto flex size-12 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.06] text-xl text-ember">⌁</span>
+          <span className="mt-4 block text-sm font-semibold text-bone">Transcripts · SOPs · PDFs · Recordings · CRM exports</span>
+          <span className="mt-2 block text-xs leading-5 text-fog">One calm intake layer for every operational artifact.</span>
           <input className="sr-only" type="file" multiple aria-label="Upload operational artifacts" />
-        </div>
+        </label>
 
         <div className="mt-5 grid gap-3 sm:grid-cols-2">
           {intakeSources.map((source) => (
