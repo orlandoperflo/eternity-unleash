@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --font-sans: "SF Pro Display", "Inter", "Segoe UI", system-ui, sans-serif;
   color-scheme: dark;
@@ -20,6 +24,12 @@ body {
   text-rendering: geometricPrecision;
 }
 
+button,
+input,
+textarea {
+  font: inherit;
+}
+
 ::selection {
   background: rgba(154, 184, 255, 0.28);
 }
@@ -39,5 +49,20 @@ body {
 .orbit-grid {
   background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
   background-size: 64px 64px;
-  mask-image: radial-gradient(circle at center, black, transparent 68%);
+  mask-image: radial-gradient(circle at center, black, transparent 70%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
