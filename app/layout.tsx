@@ -3,8 +3,8 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Eternity — Operational Intelligence Orchestrator",
-  description: "Upload your company brain and receive an operational intelligence architecture.",
+  title: "Eternity Operator Workspace",
+  description: "Internal operational intelligence workspace for compiling company information into AI systems, workflows, memory, and deployment-ready repositories.",
   metadataBase: new URL("https://eternity.ai")
 };
 
